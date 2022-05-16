@@ -19,9 +19,9 @@ const Modal = ({ active, onClose, children }) => {
             {children}
           </div>
         </div>,
-        document.getElementById('overlay-root')
+        document.getElementById('overlay-root')   
       )
-    : null;
+    :null;
 };
 
 export default Modal;
