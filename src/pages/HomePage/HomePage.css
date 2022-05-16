@@ -1,0 +1,29 @@
+.homePage {
+   padding: 0 0 55px 0;
+}
+
+.homePage__search {
+   width: 100%;
+   display: flex;
+ }
+ 
+
+ .homePage__search input {
+   width: 100%;
+   border: 2px solid #000;
+   font-size: 20px;
+   border-right: 1px solid #000;
+   padding: 10px;
+   border-radius: 26px;
+   outline: none;
+ }
+
+ @media (max-width: 767px) {
+  .homePage__search input {
+    font-size: 16px;
+  }
+  
+}
+ 
+
+ 

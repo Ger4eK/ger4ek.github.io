@@ -1,0 +1,20 @@
+.header {
+   display: flex;
+   padding-bottom: 27.5px;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.header__image {
+   transition-duration: .35s;
+   transition-property: transform;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+   width: 64px;
+}
+
+.header__image:hover {
+   transform: scale(0.95);
+}
