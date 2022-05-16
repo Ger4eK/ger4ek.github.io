@@ -1,8 +1,8 @@
 {
-  "name": "announcement-list",
+  "name": "announcements-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ger4ek.github.io/announcements-list/",
+  "homepage": "https://ger4ek.github.io/announcements-list",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
