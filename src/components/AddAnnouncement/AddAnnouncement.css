@@ -39,7 +39,7 @@
    .add__announcement-form {
       flex: 0 1 625px;
    }
-   .add__announcement-form input, textarea,{
+   .add__announcement-form input, textarea {
       
       font-size: 16px;
    }
@@ -52,6 +52,3 @@
    }
 }
 
-@media (max-width: 480px) {
-   
-}

@@ -55,12 +55,3 @@
 }
 
 
-@media (max-width: 767px) {
-   .announcementPage__info, .similar__announcements {
-      /*font-size: 12px;*/
-   }
-}
-
-@media (max-width: 480px) {
-   
-}

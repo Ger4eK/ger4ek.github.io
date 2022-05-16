@@ -36,10 +36,6 @@
    transform: scale(1);
 }
 
-@media (min-width: 1281px) {
-   
-}
-
 
 @media (max-width: 1024px){
    .modal__content {
@@ -52,10 +48,5 @@
 @media (max-width: 767px) {
    .modal__content {
       width: 400px;
-    }
-   
-}
-
-@media (max-width: 480px) {
-   
+    } 
 }
