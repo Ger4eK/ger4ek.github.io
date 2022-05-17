@@ -20,13 +20,15 @@ const AnnouncementPage = () => {
   );
 
   useEffect(() => {
-    dispatch(
-      similarAnnouncement({
-        title: currentAnnouncement.title,
-        id: currentAnnouncement.id,
-      })
-    );
-  }, [dispatch, currentAnnouncement.title, currentAnnouncement.id]);
+    if (currentAnnouncement) {
+      dispatch(
+        similarAnnouncement({
+          title: currentAnnouncement.title,
+          id: currentAnnouncement.id,
+        })
+      );
+    }
+  }, [dispatch, currentAnnouncement]);
 
   const similar = useSelector(
     (state) => state.announcements.similarAnnouncements
@@ -39,7 +41,7 @@ const AnnouncementPage = () => {
     setEditModal(false);
   };
 
-  return (
+  return currentAnnouncement ? (
     <div className='announcementPage'>
       <div className='announcementPage__info'>
         <h2>{currentAnnouncement.title}</h2>
@@ -71,6 +73,8 @@ const AnnouncementPage = () => {
         </div>
       ))}
     </div>
+  ) : (
+    []
   );
 };
 
