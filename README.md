@@ -1,4 +1,4 @@
-# Link: [ger4ek.github.io]
+# Link: https://ger4ek.github.io/
 
 ## Stack of technologies:
 
