@@ -50,3 +50,16 @@
    }
 }
 
+@media (max-width: 450px) {
+   .add__announcement-form {
+      flex: 0 1 300px;
+      
+   }
+   .add__announcement-form input, textarea {
+      padding: 4px;
+   }
+
+   .add__announcement-form button {
+      padding: 4px;
+   }
+}

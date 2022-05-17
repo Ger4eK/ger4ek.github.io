@@ -23,6 +23,14 @@ h2 {
   background-color: #fff;
 }
 
+@media (max-width: 450px) {
+  .App {
+    padding: 25px 25px 95px;
+  }
+  .container {
+    padding: 25px 25px 95px;  
+  }
+}
 
 
 

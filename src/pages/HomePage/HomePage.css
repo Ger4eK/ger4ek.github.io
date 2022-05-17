@@ -25,5 +25,12 @@
   
 }
  
+ @media (max-width: 450px) {
+  .homePage__search input {
+    font-size: 16px;
+    padding: 4px;
+  }    
+}
+ 
 
  

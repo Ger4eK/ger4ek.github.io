@@ -21,7 +21,7 @@ const Modal = ({ active, onClose, children }) => {
         </div>,
         document.getElementById('overlay-root')   
       )
-    :null;
+    : null;
 };
 
 export default Modal;

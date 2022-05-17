@@ -50,3 +50,9 @@
       width: 400px;
     } 
 }
+@media (max-width: 450px) {
+   .modal__content {
+      width: 270px;
+      padding: 10px 20px;
+    } 
+}

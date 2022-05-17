@@ -9,8 +9,11 @@ const Announcements = ({ data }) => {
   const [editModal, setEditModal] = useState(false);
   const [editData, setEditData] = useState('');
 
-  const modalOpeningHandle = () => {
+  const openingAddModalHandler = () => {
     return setAddModal(true);
+  };
+  const openingEditModalHandler = () => {
+    return setEditModal(true);
   };
 
   const addCloseModalHandler = () => {
@@ -28,7 +31,7 @@ const Announcements = ({ data }) => {
     <div className='announcements'>
       <div className='add__announcement'>
         <button
-          onClick={modalOpeningHandle}
+          onClick={openingAddModalHandler}
           className='announcement__button button_add'
         >
           + Add announcement
@@ -44,13 +47,11 @@ const Announcements = ({ data }) => {
       {data.map((announcement) => {
         return (
           <div key={announcement.id}>
-            {/*<Link to={`/${announcement.id}`} className='announcement__link'>*/}
             <Announcement
               data={announcement}
               editDataId={EditData}
-              setEditActive={setEditModal}
+              onOpen={openingEditModalHandler}
             />
-            {/*</Link>*/}
           </div>
         );
       })}

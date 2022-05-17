@@ -23,8 +23,6 @@ const AddAnnouncement = ({ active, onClose }) => {
       date,
     };
     dispatch(addAnnouncements(data));
-
-    console.log('date', data);
     setTitle('');
     setDescription('');
     setDate('');

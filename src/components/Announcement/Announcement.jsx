@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { deleteAnnouncements } from '../../store/slice/announcement-slice';
 import '../Announcement/Announcement.css';
 
-const Announcement = ({ data, setEditActive, editDataId }) => {
+const Announcement = ({ data, onOpen, editDataId }) => {
   const [currentData, setCurrentData] = useState('');
   const dispatch = useDispatch();
 
@@ -27,7 +27,7 @@ const Announcement = ({ data, setEditActive, editDataId }) => {
         <button
           className='announcement__button button_edit'
           onClick={() => {
-            setEditActive(true);
+            onOpen(true);
             editDataId(data);
           }}
         >
