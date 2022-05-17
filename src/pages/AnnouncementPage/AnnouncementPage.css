@@ -8,6 +8,9 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   text-align: center;
+   word-break: break-all;
+   overflow-wrap: break-word;
    padding: 40px;
     border: 2px solid;
     border-radius: 26px;
@@ -53,6 +56,7 @@
       font-size: 16px;
    }
 }
+
 @media (max-width: 450px){
    .announcementPage h1 {
       display: flex;
