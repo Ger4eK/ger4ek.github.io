@@ -1,6 +1,6 @@
-# Link: ger4ek.github.io
+# Link: [ger4ek.github.io]
 
-##Stack of technologies:
+## Stack of technologies:
 
 * React
 * Redux
